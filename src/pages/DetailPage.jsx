@@ -16,7 +16,7 @@ export function DetailPage() {
   const getLink = useCallback(async() => {
 
     try {
-      const resp = await axios.get('http://localhost:3000/api/link/' + id, {
+      const resp = await axios.get('https://busy-crow-beanie.cyclic.app/api/link/' + id, {
         headers: {
           Authorization: 'Bearer ' + token,
         }

@@ -13,7 +13,7 @@ export function CreatePage() {
     if (e.key === 'Enter') {
       try {
 
-        const data = await axios.post('http://localhost:3000/api/link/generate', { from: link }, {
+        const data = await axios.post('https://busy-crow-beanie.cyclic.app/api/link/generate', { from: link }, {
           headers: {
             Authorization: 'Bearer ' + auth.token,
           }

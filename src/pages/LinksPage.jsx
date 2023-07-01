@@ -14,7 +14,7 @@ export function LinksPage() {
   const fetchLinks = useCallback(async() =>{
     try {
 
-      const resp = await axios.get('http://localhost:3000/api/link/', {
+      const resp = await axios.get('https://busy-crow-beanie.cyclic.app/api/link/', {
         headers: {
           Authorization: 'Bearer ' + token,
         }

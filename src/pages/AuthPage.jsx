@@ -22,7 +22,7 @@ export function AuthPage() {
   const registerHandler = async() => {
     try {
       // const data = await request('/api/auth/register', 'POST', {...form});
-      const data = await axios.post('http://localhost:3000/api/auth/register', form);
+      const data = await axios.post('https://busy-crow-beanie.cyclic.app/api/auth/register', form);
       setLoading(true);
       alert(data.data.message);
     } catch (error) {}
@@ -30,7 +30,7 @@ export function AuthPage() {
 
   const loginHandler = async() => {
     try {
-      const data = await axios.post('http://localhost:3000/api/auth/login', form);
+      const data = await axios.post('https://busy-crow-beanie.cyclic.app/api/auth/login', form);
       auth.login(data.data.token, data.data.userId);
 
     } catch(e){}
